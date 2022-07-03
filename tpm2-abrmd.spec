@@ -76,8 +76,9 @@ Statyczna biblioteka tpm2-abrmd.
 %{__aclocal} -I m4
 %{__autoconf}
 %{__automake}
+# PATH for /sbin/ss
+export PATH=${PATH:+$PATH:}/sbin
 %configure \
-	ss=/sbin/ss \
 	%{?with_tests:--enable-integration} \
 	--disable-silent-rules \
 	%{!?with_static_libs:--disable-static-libs} \
