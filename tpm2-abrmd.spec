@@ -21,7 +21,8 @@ BuildRequires:	sed >= 4.0
 BuildRequires:	tpm2-tss-devel >= 2.4.0
 %if %{with tests}
 BuildRequires:	cmocka-devel >= 1.0
-# ss
+# ss (real iproute2 package required, not the false one provided by vserver-packages)
+BuildRequires:	/sbin/ss
 BuildRequires:	iproute2
 # or ibmswtpm2
 BuildRequires:	swtpm
