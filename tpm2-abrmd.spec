@@ -7,13 +7,13 @@
 Summary:	TPM2 Access Broker and Resource Management Daemon
 Summary(pl.UTF-8):	Broker dostępu i demon zarządzający zasobami TPM2
 Name:		tpm2-abrmd
-Version:	2.4.1
+Version:	3.0.0
 Release:	1
 License:	BSD
 Group:		Libraries
 #Source0Download: https://github.com/tpm2-software/tpm2-abrmd/releases
 Source0:	https://github.com/tpm2-software/tpm2-abrmd/releases/download/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	674881dc8a1385c28f9a6ea0585da259
+# Source0-md5:	4fd91ea71a48c8ee4d63ab77eb1f17ac
 URL:		https://github.com/tpm2-software/tpm2-abrmd
 BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	pkgconfig
